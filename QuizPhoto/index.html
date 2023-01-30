@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="wrapper">
+                <span class="quiz_length"></span>
+                <div class="wrapper_timer">
+                    <img src="clock.png" class="clock" alt="clock">
+                    <div class="timer"></div>
+                </div>
+            </div>
+            <img src='' id="quiz"></img>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="1">
+                    <label for="1" id="answer1"></label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="2">
+                    <label for="2" id="answer2"></label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="3">
+                    <label for="3" id="answer3"></label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="4">
+                    <label for="4" id="answer4"></label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+
+    <div class="container_start">
+        <div class="header_start">
+            <h2 class="theme">Ты готова, доченька?</h2>
+            <button id="start">Жми</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
