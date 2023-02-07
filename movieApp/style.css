@@ -70,15 +70,22 @@ main {
 }
 
 .overview {
+    height: 375px;
     width: 250px;
     color: antiquewhite;
     position: absolute;
     top: 0;
-    background-color: indigo;
+    background-color: #2b7283;
     padding: 1rem;
-    overflow: hidden;
+    overflow: auto;
     transform: rotateY(90deg);
+    border-radius: 8px;
+    opacity: 0.8;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
 }
+
 
 
 img {
@@ -86,6 +93,7 @@ img {
 
     border-radius: 8px;
     width: 100%;
+    height: 375px;
     box-shadow: 0 0 6px 4px rgb(122 121 121 / 50%);
 }
 
@@ -124,4 +132,34 @@ span.orange {
 
 span.red {
     color: red;
+}
+
+.genres {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 100px;
+}
+
+tag {
+    cursor: pointer;
+    color: white;
+    background-color: #22221f;
+    border-radius: 20px;
+    padding: 0.8rem;
+
+}
+
+.show {
+    transform: rotateY(0deg);
+}
+
+.active {
+    background-color: rgb(212, 17, 17);
+}
+
+.clear {
+ background-color: #a429a8;
 }
