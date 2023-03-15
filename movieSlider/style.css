@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500&display=swap');
+
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(24, 23, 27);
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: crimson;
+    padding: 0.8rem;
+}
+
+.search {
+    width: 250px;
+    color: wheat;
+    background-color: #bf1031;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+}
+
+.search::placeholder {
+    color: antiquewhite;
+    font-size: 1rem;
+}
+
+.search:focus {
+    outline: none;
+}
+
+h1,h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: azure;
+    margin: 1rem;
+}
+
+.fa-angle-left, .fa-angle-right {
+    font-size: 4rem;
+    color: crimson;
+}
+
+.slick_prev, .slick_next {
+    height: 4rem;
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+}
+.slick_next {
+    right: 50px;
+}
+.slick_prev {
+    left: 50px;
+}
+
+main {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    margin: 0.5rem 1rem;
+    width: 250px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+img {
+    height: 375px;
+    width: 100%;
+}
+
+.vote_average {
+    position: absolute;
+    top: -1rem;
+    left: 100px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    background-color: crimson;
+}
+
+.movie_info {
+    padding: 0.5rem 0 1rem 0;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.wrapper .red {
+    background-color: crimson;
+}
+
+.wrapper .orange {
+    background-color: rgb(220, 93, 20);
+}
+
+.wrapper .green {
+    background-color: rgb(37, 138, 45);
+}
+
+.sorting {
+    width: 130px;
+    color: #d8f8ce;
+    background-color: rgb(167 28 28);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+}
+.sorting:hover {
+    opacity: 0.8;
+    background-color: rgb(170, 101, 10);
+}
+
+.page {
+    position: absolute;
+}
