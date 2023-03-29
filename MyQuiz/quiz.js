@@ -255,4 +255,7 @@ const questions = {
 answer.push (currentObj.choices[i].label);
  }
 
+
+
+
   
