@@ -115,7 +115,7 @@ button.close_modal {
 }
 
 .film_img {
-    height: 374px;
+    max-height: 374px;
     cursor: auto;
 }
 
@@ -138,28 +138,28 @@ button.close_modal {
     line-height: 1.5em;
     overflow-y: auto;
     scrollbar-width: 30px;
-    
+
 }
 
 .scroll-container {
     overflow-y: auto;
-  }
-  
-  .scroll-container::-webkit-scrollbar {
+}
+
+.scroll-container::-webkit-scrollbar {
     width: 17px;
-  }
-  
-  .scroll-container::-webkit-scrollbar-track {
+}
+
+.scroll-container::-webkit-scrollbar-track {
     background-image: repeating-linear-gradient(358deg, #2d2020 0, #631414 1px, transparent 0, transparent 50%);
     background-size: 10px 10px;
-  }
-  
-  .scroll-container::-webkit-scrollbar-thumb {
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
     background: transparent;
     background-color: #f9002b;
     border-radius: 10px;
     border: 2px solid black;
-  }
+}
 
 .film_rate {
     font-size: 18px;
@@ -194,7 +194,7 @@ img {
 
     border-radius: 8px;
     width: 100%;
-    height: 375px;
+    max-height: 375px;
     box-shadow: 0 0 6px 4px rgb(122 121 121 / 50%);
 }
 
@@ -263,4 +263,53 @@ tag {
 
 .clear {
     background-color: #a429a8;
+}
+
+@media (max-width: 996px) {
+    .overview {
+        width: auto;
+    }
+
+    .scroll-container {
+        height: 150px;
+    }
+
+    .film_info {
+        row-gap: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .film_name {
+        font-size: 15px;
+    }
+
+    .film_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .film_img {
+        width: 75%;
+    }
+}
+
+@media (max-width: 740px) {
+    input {
+        width: 200px;
+    }
+
+    button {
+        width: 100px;
+    }
+}
+
+@media (max-width: 380px) {
+    input {
+        width: 100px;
+    }
 }
